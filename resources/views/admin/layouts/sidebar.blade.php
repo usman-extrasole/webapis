@@ -152,6 +152,34 @@
 
                     </ul>
                 </li>
+                <li class="nav-item ">
+                    <a href="{{route('about.index')}}" class="nav-link ">
+                        <i class="nav-icon fas fa-copy"></i>
+                        <p>About
+                        </p>
+                    </a>
+                </li>
+                <li class="nav-item ">
+                    <a href="{{route('contact.index')}}" class="nav-link ">
+                        <i class="nav-icon fas fa-copy"></i>
+                        <p>Contact
+                        </p>
+                    </a>
+                </li>
+                <li class="nav-item ">
+                    <a href="{{route('donate.index')}}" class="nav-link ">
+                        <i class="nav-icon fas fa-copy"></i>
+                        <p>Donate
+                        </p>
+                    </a>
+                </li>
+                <li class="nav-item ">
+                    <a href="{{route('privacy.index')}}" class="nav-link ">
+                        <i class="nav-icon fas fa-copy"></i>
+                        <p>Privacy Policy
+                        </p>
+                    </a>
+                </li>
 {{--                <li class="nav-item">--}}
 {{--                    <a href="#" class="nav-link">--}}
 {{--                        <i class="nav-icon fas fa-copy"></i>--}}

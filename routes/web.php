@@ -54,6 +54,10 @@ Route::post('/user/store','UserController@store')->name('user.store');
 
 Route::post('/fetchmaincategory', 'ChildCategoryController@fetchmaincategory')->name('fetchmaincategory');
 
+Route::resource('/about','AboutController');
+Route::resource('/contact','ContactController');
+Route::resource('/donate','DonateController');
+Route::resource('/privacy','PrivacyController');
 
 Route::get('/child-category/create','ChildCategoryController@create')->name('child-category.create');
 Route::get('/child-categoryy/create/one','ChildCategoryController@create1')->name('child-categoryy.create.one');
