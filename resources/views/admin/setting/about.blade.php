@@ -92,7 +92,7 @@
                                                             <div class="form-group">
                                                                 <label for="title"><b>Image</b><span
                                                                         class="text-danger">*</span></label>
-                                                                <input type="file" name="img" class="form-control">
+                                                                <input type="file" accept="image/png, image/gif, image/jpeg" name="img" class="form-control">
                                                             </div>
                                                         </div>
                                                         <div class="col-md-12">
@@ -208,7 +208,7 @@
                         <div class="col-md-12">
                             <div class="form-group">
                                 <label for="title"><b>Image</b><span class="text-danger">*</span></label>
-                                <input type="file" name="img" class="form-control">
+                                <input type="file" accept="image/png, image/gif, image/jpeg" name="img" class="form-control">
                             </div>
                         </div>
                         <div class="col-md-12">

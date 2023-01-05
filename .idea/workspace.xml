@@ -6,7 +6,22 @@
   <component name="ChangeListManager">
     <list default="true" id="087958c5-a83a-4d00-ac9d-cbdcc92eddf7" name="Changes" comment="All done">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/routes/api.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/api.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/composer.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/migrations/2014_10_12_000000_create_users_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2014_10_12_000000_create_users_table.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/admin/category/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/category/index.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/admin/category/index1.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/category/index1.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/admin/category/index2.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/category/index2.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/admin/childcategory/create.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/childcategory/create.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/admin/childcategory/edit.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/childcategory/edit.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/admin/setting/about.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/setting/about.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/admin/setting/contact.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/setting/contact.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/admin/setting/donate.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/setting/donate.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/admin/setting/privicy.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/setting/privicy.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/admin/subcategory/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/subcategory/index.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/admin/subcategory/index1.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/subcategory/index1.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/admin/subcategory/index2.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/subcategory/index2.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/admin/user/adminEdit.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/user/adminEdit.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/admin/user/edit.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/user/edit.blade.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -133,7 +148,7 @@
     &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/xampp/htdocs/Ecommerce&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/xampp/htdocs/admin-user-chatting-master&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
@@ -158,6 +173,16 @@
       <updated>1670530760307</updated>
       <workItem from="1670530761683" duration="44137000" />
       <workItem from="1670958360549" duration="5407000" />
+      <workItem from="1671103583829" duration="1288000" />
+      <workItem from="1671174554110" duration="110000" />
+      <workItem from="1671433588807" duration="169000" />
+      <workItem from="1671440925624" duration="25000" />
+      <workItem from="1671441157968" duration="2529000" />
+      <workItem from="1671520622443" duration="594000" />
+      <workItem from="1671529878950" duration="2888000" />
+      <workItem from="1672043629951" duration="608000" />
+      <workItem from="1672738116649" duration="7192000" />
+      <workItem from="1672910838831" duration="1572000" />
     </task>
     <task id="LOCAL-00001" summary="All done">
       <created>1670876307369</created>
