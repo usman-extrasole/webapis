@@ -11,7 +11,7 @@
                 </div>
                 <!-- /.card-header -->
                 <!-- form start -->
-                <form action="{{route('user.update',['id'=>$user->id])}}" method="post" accept-charset="UTF-8" enctype="multipart/form-data">
+                <form action="{{route('profile.update')}}" method="post" accept-charset="UTF-8" enctype="multipart/form-data">
                     @csrf
                     @if ($errors->any())
                         <div class="alert alert-danger">
@@ -29,7 +29,7 @@
                         </div>
                         <div class="form-group">
                             <label for="exampleInputEmail1">E-mail</label>
-                            <input type="email" readonly value="{{$user->email}}" name="email" class="form-control" id="exampleInputEmail1" placeholder="Enter Email">
+                            <input type="email" @if($user->role!=1) readonly @endif value="{{$user->email}}" name="email" class="form-control" id="exampleInputEmail1" placeholder="Enter Email">
                         </div>
                         <div class="form-group">
                             <label for="exampleInputEmail1">Phone</label>
