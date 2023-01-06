@@ -54,7 +54,7 @@
                             <div class="col-md-5">
                                 <div class="form-group">
                                     <label for="">File 1</label>
-                                    <input type="file" name="file1" id="file1"   class="form-control">
+                                    <input type="file" accept=".pdf"  name="file1" id="file1"   class="form-control">
                                     <input type="text" name="file1" id="link1" placeholder="Enter PDF File Link"  style="display: none"  class="form-control">
                                 </div>
                             </div>
@@ -76,7 +76,7 @@
                             <div class="col-md-5">
                                 <div class="form-group">
                                     <label for="">File 2</label>
-                                    <input type="file" name="file2" id="file2"   class="form-control">
+                                    <input type="file" accept=".pdf"  name="file2" id="file2"   class="form-control">
                                     <input type="text" name="file2" id="link2" placeholder="Enter PDF File Link"  style="display: none"  class="form-control">
                                 </div>
                             </div>
@@ -98,7 +98,7 @@
                             <div class="col-md-5">
                                 <div class="form-group">
                                     <label for="">File 3</label>
-                                    <input type="file" name="file3" id="file3"   class="form-control">
+                                    <input type="file" accept=".pdf"  name="file3" id="file3"   class="form-control">
                                     <input type="text" name="file3" id="link3" placeholder="Enter PDF File Link"  style="display: none"  class="form-control">
                                 </div>
                             </div>
@@ -120,7 +120,7 @@
                             <div class="col-md-5">
                                 <div class="form-group">
                                     <label for="">File 4</label>
-                                    <input type="file" name="file4" id="file4"   class="form-control">
+                                    <input type="file" accept=".pdf"  name="file4" id="file4"   class="form-control">
                                     <input type="text" name="file4" id="link4" placeholder="Enter PDF File Link"  style="display: none"  class="form-control">
                                 </div>
                             </div>
@@ -142,7 +142,7 @@
                             <div class="col-md-5">
                                 <div class="form-group">
                                     <label for="">File 5</label>
-                                    <input type="file" name="file5" id="file5"   class="form-control">
+                                    <input type="file" accept=".pdf"  name="file5" id="file5"   class="form-control">
                                     <input type="text" name="file5" id="link5" placeholder="Enter PDF File Link"  style="display: none"  class="form-control">
                                 </div>
                             </div>

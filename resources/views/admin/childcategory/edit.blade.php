@@ -47,19 +47,29 @@
                                     <input type="text" value="{{$childcategory->name1}}" name="name1" placeholder="Enter Title 1" class="form-control">
                                 </div>
                             </div>
-                            <div class="col-md-6">
+                            <div class="col-md-2">
+                                <div class="form-group">
+                                    <label for=""></label>
+                                    <div class="form-check" style="margin-top: 16px;">
+                                        <input class="form-check-input" id="checkbox1" @if(file_exists($childcategory->file1))checked="" @endif  type="checkbox" >
+                                        <label class="form-check-label"><b>Do you Want link?</b></label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-5">
                                 <div class="form-group">
                                     <label for="">File 1</label>
                                     @if(file_exists($childcategory->file1))
-                                    <input type="file" name="file1" id="file1"   class="form-control">
+                                    <input type="file" name="file1" id="file1" accept=".pdf"  class="form-control">
                                     <input type="text" name="file1" id="link1" placeholder="Enter PDF File Link"  style="display: none"  class="form-control">
                                     @else
-                                    <input type="file" name="file1" id="file1" style="display: none"  class="form-control">
+                                    <input type="file" name="file1" id="file1" accept=".pdf" style="display: none"  class="form-control">
                                     <input type="text" name="file1" id="link1" value="{{$childcategory->file1 }}" placeholder="Enter PDF File Link"   class="form-control">
                                     @endif
-                                    <input type="file" name="file1" accept=".pdf"   class="form-control">
+
                                 </div>
                             </div>
+
                             <div class="col-md-5">
                                 <div class="form-group">
                                     <label for="">Title 2</label>
@@ -79,13 +89,13 @@
                                 <div class="form-group">
                                     <label for="">File 2</label>
                                     @if(file_exists($childcategory->file2))
-                                    <input type="file" name="file2" id="file2"   class="form-control">
+                                    <input type="file" name="file2" id="file2" accept=".pdf"  class="form-control">
                                     <input type="text" name="file2" id="link2" placeholder="Enter PDF File Link"  style="display: none"  class="form-control">
                                     @else
-                                        <input type="file" name="file2" id="file2" style="display: none"   class="form-control">
+                                        <input type="file" name="file2" id="file2"accept=".pdf" style="display: none"   class="form-control">
                                         <input type="text" name="file2" id="link2" value="{{$childcategory->file2 }}" placeholder="Enter PDF File Link"    class="form-control">
                                     @endif
-                                    <input type="file" name="file2" accept=".pdf"  class="form-control">
+
                                 </div>
                             </div>
                             <div class="col-md-5">
@@ -107,13 +117,13 @@
                                 <div class="form-group">
                                     <label for="">File 3</label>
                                     @if(file_exists($childcategory->file3))
-                                    <input type="file" name="file3" id="file3"   class="form-control">
+                                    <input type="file" name="file3" id="file3"  accept=".pdf" class="form-control">
                                     <input type="text" name="file3" id="link3" placeholder="Enter PDF File Link"  style="display: none"  class="form-control">
                                     @else
-                                        <input type="file" name="file3" id="file3" style="display: none"   class="form-control">
+                                        <input type="file" name="file3" id="file3" accept=".pdf" style="display: none"   class="form-control">
                                         <input type="text" name="file3" id="link3" value="{{$childcategory->file3 }}" placeholder="Enter PDF File Link"   class="form-control">
                                     @endif
-                                    <input type="file" name="file3" accept=".pdf"  class="form-control">
+
                                 </div>
                             </div>
                             <div class="col-md-5">
@@ -135,13 +145,13 @@
                                 <div class="form-group">
                                     <label for="">File 4</label>
                                     @if(file_exists($childcategory->file4))
-                                    <input type="file" name="file4" id="file4"   class="form-control">
+                                    <input type="file" name="file4"  accept=".pdf" id="file4"   class="form-control">
                                     <input type="text" name="file4"  id="link4" placeholder="Enter PDF File Link"  style="display: none"  class="form-control">
                                     @else
-                                        <input type="file" name="file4" style="display: none" id="file4"   class="form-control">
+                                        <input type="file" name="file4" accept=".pdf" style="display: none" id="file4"   class="form-control">
                                         <input type="text" name="file4"  id="link4" value="{{$childcategory->file4}}" placeholder="Enter PDF File Link"    class="form-control">
                                     @endif
-                                    <input type="file" name="file4"  accept=".pdf" class="form-control">
+
                                 </div>
                             </div>
                             <div class="col-md-5">
@@ -164,13 +174,13 @@
                                 <div class="form-group">
                                     <label for="">File 5</label>
                                     @if(file_exists($childcategory->file5))
-                                    <input type="file" name="file5" id="file5"   class="form-control">
+                                    <input type="file" name="file5" id="file5"  accept=".pdf"  class="form-control">
                                     <input type="text" name="file5" id="link5" placeholder="Enter PDF File Link"  style="display: none"  class="form-control">
                                     @else
-                                        <input type="file" name="file5" id="file5" style="display: none"  class="form-control">
+                                        <input type="file" name="file5" id="file5" accept=".pdf" style="display: none"  class="form-control">
                                         <input type="text" name="file5" id="link5" value="{{$childcategory->file5}}" placeholder="Enter PDF File Link"    class="form-control">
                                     @endif
-                                    <input type="file" name="file5" accept=".pdf"  class="form-control">
+
                                 </div>
                             </div>
 
