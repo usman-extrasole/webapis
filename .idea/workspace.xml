@@ -6,18 +6,6 @@
   <component name="ChangeListManager">
     <list default="true" id="087958c5-a83a-4d00-ac9d-cbdcc92eddf7" name="Changes" comment="All done">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Api/AppControlller.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Api/AppControlller.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/CategoryController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/CategoryController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/ChildCategoryController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/ChildCategoryController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/migrations/2022_09_09_182036_create_categories_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2022_09_09_182036_create_categories_table.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/admin/category/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/category/index.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/admin/category/index1.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/category/index1.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/admin/category/index2.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/category/index2.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/admin/childcategory/create.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/childcategory/create.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/admin/childcategory/createOne.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/childcategory/createOne.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/admin/childcategory/createTwo.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/childcategory/createTwo.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/admin/childcategory/edit.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/childcategory/edit.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/admin/childcategory/show.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/childcategory/show.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/routes/api.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/api.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -169,12 +157,7 @@
       <option name="presentableId" value="Default" />
       <updated>1670530760307</updated>
       <workItem from="1670530761683" duration="44137000" />
-      <workItem from="1670958360549" duration="6018000" />
-      <workItem from="1670996101022" duration="1929000" />
-      <workItem from="1672078323585" duration="5142000" />
-      <workItem from="1672168221424" duration="5321000" />
-      <workItem from="1672252997257" duration="2037000" />
-      <workItem from="1672985502124" duration="139000" />
+      <workItem from="1670958360549" duration="5407000" />
     </task>
     <task id="LOCAL-00001" summary="All done">
       <created>1670876307369</created>
@@ -183,14 +166,7 @@
       <option name="project" value="LOCAL" />
       <updated>1670876307369</updated>
     </task>
-    <task id="LOCAL-00002" summary="All done">
-      <created>1670964188405</created>
-      <option name="number" value="00002" />
-      <option name="presentableId" value="LOCAL-00002" />
-      <option name="project" value="LOCAL" />
-      <updated>1670964188406</updated>
-    </task>
-    <option name="localTasksCounter" value="3" />
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
