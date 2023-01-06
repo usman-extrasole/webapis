@@ -20,14 +20,14 @@ class AppControlller extends Controller
         $category = Category::where('status','=',0)->get();
         return response()->json(['success' => $category], $this->successStatus);
     }
-    public function librarySubCategory()
+    public function librarySubCategory($category_id)
     {
-        $subcategory = SubCatgeory::where('status','=',0)->get();
+        $subcategory = SubCatgeory::where('status','=',0)->where('category_id','=',$category_id)->get();
         return response()->json(['success' => $subcategory], $this->successStatus);
     }
-    public function libraryChildCategory()
+    public function libraryChildCategory($subcategory_id)
     {
-        $childcategory = ChildCategory::where('status','=',0)->get();
+        $childcategory = ChildCategory::where('status','=',0)->where('subcategory_id','=',$subcategory_id)->get();
         return response()->json(['success' => $childcategory], $this->successStatus);
     }
     public function guitarCategory()
@@ -35,14 +35,14 @@ class AppControlller extends Controller
         $category = Category::where('status','=',1)->get();
         return response()->json(['success' => $category], $this->successStatus);
     }
-    public function guitarSubCategory()
+    public function guitarSubCategory($category_id)
     {
-        $subcategory = SubCatgeory::where('status','=',1)->get();
+        $subcategory = SubCatgeory::where('status','=',1)->where('category_id','=',$category_id)->get();
         return response()->json(['success' => $subcategory], $this->successStatus);
     }
-    public function guitarChildCategory()
+    public function guitarChildCategory($subcategory_id)
     {
-        $childcategory = ChildCategory::where('status','=',1)->get();
+        $childcategory = ChildCategory::where('status','=',1)->where('subcategory_id','=',$subcategory_id)->get();
         return response()->json(['success' => $childcategory], $this->successStatus);
     }
     public function pianoCategory()
@@ -50,14 +50,14 @@ class AppControlller extends Controller
         $category = Category::where('status','=',2)->get();
         return response()->json(['success' => $category], $this->successStatus);
     }
-    public function pianoSubCategory()
+    public function pianoSubCategory($category_id)
     {
-        $subcategory = SubCatgeory::where('status','=',2)->get();
+        $subcategory = SubCatgeory::where('status','=',2)->where('category_id','=',$category_id)->get();
         return response()->json(['success' => $subcategory], $this->successStatus);
     }
-    public function pianoChildCategory()
+    public function pianoChildCategory($subcategory_id)
     {
-        $childcategory = ChildCategory::where('status','=',2)->get();
+        $childcategory = ChildCategory::where('status','=',2)->where('subcategory_id','=',$subcategory_id)->get();
         return response()->json(['success' => $childcategory], $this->successStatus);
     }
     public function contact()

@@ -75,10 +75,19 @@
 
                                                         <div class="col-md-12">
                                                             <div class="form-group">
-                                                                <label for="title"><b>Category</b><span
+                                                                <label for="title"><b>Category Title 1</b><span
                                                                         class="text-danger">*</span></label>
                                                                 <input type="text" value="{{$row->name}}" name="name"
                                                                        required placeholder="Category Name"
+                                                                       class="form-control">
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-md-12">
+                                                            <div class="form-group">
+                                                                <label for="title"><b>Category Title 2</b><span
+                                                                        class="text-danger">*</span></label>
+                                                                <input type="text" value="{{$row->name2}}" name="name2"
+                                                                        placeholder="Category Title 2"
                                                                        class="form-control">
                                                             </div>
                                                         </div>
@@ -146,8 +155,15 @@
                         <input type="hidden" name="status" value="1">
                         <div class="col-md-12">
                             <div class="form-group">
-                                <label for="title"><b>Category</b><span class="text-danger">*</span></label>
+                                <label for="title"><b>Category Title 1</b><span class="text-danger">*</span></label>
                                 <input type="text" name="name" required placeholder="Category Name"
+                                       class="form-control">
+                            </div>
+                        </div>
+                        <div class="col-md-12">
+                            <div class="form-group">
+                                <label for="title"><b>Category Title 2</b><span class="text-danger">*</span></label>
+                                <input type="text" name="name2"  placeholder="Category Title 2"
                                        class="form-control">
                             </div>
                         </div>

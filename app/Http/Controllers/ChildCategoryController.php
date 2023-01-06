@@ -70,6 +70,11 @@ class ChildCategoryController extends Controller
         $childcategory->category_id = $request->category_id;
         $childcategory->subcategory_id = $request->subcategory_id;
         $childcategory->user_id = Auth::user()->id;
+        $childcategory->file1 = $request->file1;
+        $childcategory->file2 = $request->file2;
+        $childcategory->file3 = $request->file3;
+        $childcategory->file4 = $request->file4;
+        $childcategory->file5 = $request->file5;
         if ($request->hasfile('file1')) {
 
             $image1 = $request->file('file1');
@@ -151,6 +156,7 @@ class ChildCategoryController extends Controller
      */
     public function update(Request $request, $id)
     {
+
         $childcategory = ChildCategory::find($id);
         $childcategory->name1 = $request->name1;
         $childcategory->name2 = $request->name2;
@@ -160,6 +166,21 @@ class ChildCategoryController extends Controller
         $childcategory->category_id = $request->category_id;
         $childcategory->subcategory_id = $request->subcategory_id;
         $childcategory->user_id = Auth::user()->id;
+        if($request->file1){
+            $childcategory->file1 = $request->file1;
+        }
+        if($request->file2){
+            $childcategory->file2 = $request->file2;
+        }
+        if($request->file3){
+            $childcategory->file3 = $request->file3;
+        }
+        if($request->file4){
+            $childcategory->file4 = $request->file4;
+        }
+        if($request->file5){
+            $childcategory->file5 = $request->file5;
+        }
         if ($request->hasfile('file1')) {
 
             $image1 = $request->file('file1');

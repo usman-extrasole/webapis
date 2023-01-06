@@ -50,6 +50,7 @@ class CategoryController extends Controller
         $user = Auth::user();
         $category=  new Category();
         $category->name = $request->name;
+        $category->name2 = $request->name2;
         $category->status = $request->status;
         $category->user_id = $user->id;
         if($user->role==2){
@@ -89,6 +90,7 @@ class CategoryController extends Controller
     public function update(Request $request, $id)
     {   $category = Category::find($id);
         $category->name = $request->name;
+        $category->name2 = $request->name2;
 
         if ($request->hasfile('img')) {
 

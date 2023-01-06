@@ -48,7 +48,13 @@
                             <div class="col-md-6">
                                 <div class="form-group">
                                     <label for="">File1</label>
-                                    <a href="{{asset($childcategory->file1)}}" target="_blank"> <span class="badge badge-success">Open Me</span></a>
+                                    @if(file_exists($childcategory->file1))
+                                    <a href="{{asset($childcategory->file1)}}" target="_blank"> <span class="badge badge-success">{{$childcategory->name1}}</span></a>
+                                    @elseif($childcategory->file1)
+                                        <a href="#" target="_blank"> <span class="badge badge-success">{{$childcategory->file1}}</span></a>
+                                    @else
+                                        <a href="#" target="_blank"> <span class="badge badge-success">Empty</span></a>
+                                    @endif
                                 </div>
                             </div>
                             <div class="col-md-6">
@@ -60,7 +66,13 @@
                             <div class="col-md-6">
                                 <div class="form-group">
                                     <label for="">File 2</label>
-                                    <a href="{{asset($childcategory->file2)}}" target="_blank"> <span class="badge badge-success">Open Me</span></a>
+                                    @if(file_exists($childcategory->file2))
+                                        <a href="{{asset($childcategory->file2)}}" target="_blank"> <span class="badge badge-success">{{$childcategory->name2}}</span></a>
+                                    @elseif($childcategory->file2)
+                                        <a href="#" target="_blank"> <span class="badge badge-success">{{$childcategory->file2}}</span></a>
+                                    @else
+                                        <a href="#" target="_blank"> <span class="badge badge-success">Empty</span></a>
+                                    @endif
                                 </div>
                             </div>
 
@@ -73,7 +85,13 @@
                             <div class="col-md-6">
                                 <div class="form-group">
                                     <label for="">File 3</label>
-                                    <a href="{{asset($childcategory->file3)}}" target="_blank"> <span class="badge badge-success">Open Me</span></a>
+                                    @if(file_exists($childcategory->file3))
+                                        <a href="{{asset($childcategory->file3)}}" target="_blank"> <span class="badge badge-success">{{$childcategory->name3}}</span></a>
+                                    @elseif($childcategory->file3)
+                                        <a href="#" target="_blank"> <span class="badge badge-success">{{$childcategory->file3}}</span></a>
+                                    @else
+                                        <a href="#" target="_blank"> <span class="badge badge-success">Empty</span></a>
+                                    @endif
                                 </div>
                             </div>
                             <div class="col-md-6">
@@ -85,7 +103,13 @@
                             <div class="col-md-6">
                                 <div class="form-group">
                                     <label for="">File 4</label>
-                                    <a href="{{asset($childcategory->file4)}}" target="_blank"> <span class="badge badge-success">Open Me</span></a>
+                                    @if(file_exists($childcategory->file4))
+                                        <a href="{{asset($childcategory->file4)}}" target="_blank"> <span class="badge badge-success">{{$childcategory->name4}}</span></a>
+                                    @elseif($childcategory->file4)
+                                        <a href="#" target="_blank"> <span class="badge badge-success">{{$childcategory->file4}}</span></a>
+                                    @else
+                                        <a href="#" target="_blank"> <span class="badge badge-success">Empty</span></a>
+                                    @endif
                                 </div>
                             </div>
                             <div class="col-md-6">
@@ -97,7 +121,13 @@
                             <div class="col-md-6">
                                 <div class="form-group">
                                     <label for="">File 5</label>
-                                    <a href="{{asset($childcategory->file5)}}" target="_blank"> <span class="badge badge-success">Open Me</span></a>
+                                    @if(file_exists($childcategory->file5))
+                                        <a href="{{asset($childcategory->file5)}}" target="_blank"> <span class="badge badge-success">{{$childcategory->name5}}</span></a>
+                                    @elseif($childcategory->file5)
+                                        <a href="#" target="_blank"> <span class="badge badge-success">{{$childcategory->file5}}</span></a>
+                                    @else
+                                        <a href="#" target="_blank"> <span class="badge badge-success">Empty</span></a>
+                                    @endif
                                 </div>
                             </div>
 

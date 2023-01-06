@@ -15,18 +15,18 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('library/category', 'Api\AppControlller@libraryCategory');
-Route::get('library/subcategory', 'Api\AppControlller@librarySubCategory');
-Route::get('library/childcategory', 'Api\AppControlller@libraryChildCategory');
+Route::get('library/subcategory/{category_id}', 'Api\AppControlller@librarySubCategory');
+Route::get('library/childcategory/{subcategory_id}', 'Api\AppControlller@libraryChildCategory');
 Route::post('library/search', 'Api\AppControlller@librarySearch');
 
 Route::get('guitar/category', 'Api\AppControlller@guitarCategory');
-Route::get('guitar/subcategory', 'Api\AppControlller@guitarSubCategory');
-Route::get('guitar/childcategory', 'Api\AppControlller@guitarChildCategory');
+Route::get('guitar/subcategory/{category_id}', 'Api\AppControlller@guitarSubCategory');
+Route::get('guitar/childcategory/{subcategory_id}', 'Api\AppControlller@guitarChildCategory');
 Route::post('guitar/search', 'Api\AppControlller@guitarSearch');
 
 Route::get('piano/category', 'Api\AppControlller@pianoCategory');
-Route::get('piano/subcategory', 'Api\AppControlller@pianoSubCategory');
-Route::get('piano/childcategory', 'Api\AppControlller@pianoChildCategory');
+Route::get('piano/subcategory/{category_id}', 'Api\AppControlller@pianoSubCategory');
+Route::get('piano/childcategory/{subcategory_id}', 'Api\AppControlller@pianoChildCategory');
 Route::post('piano/search', 'Api\AppControlller@pianoSearch');
 
 Route::get('contact', 'Api\AppControlller@contact');
