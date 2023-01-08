@@ -53,8 +53,10 @@ class SubCatgeoryController extends Controller
             $image1->move($destinationPath, $name);
             $subcategory->img = 'img/' . $name;
         }
-        $subcategory->save();
-        return redirect()->back()->with('message', 'Record Added Successfully !');
+
+            $subcategory->save();
+            return redirect()->back()->with('message', 'Record Added Successfully !');
+
     }
 
     public function show(SubCatgeory $subCatgeory)

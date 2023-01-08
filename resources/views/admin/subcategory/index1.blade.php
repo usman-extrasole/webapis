@@ -75,8 +75,8 @@
                                                             <div class="form-group">
                                                                 <label for="title"><b>Category</b><span
                                                                         class="text-danger">*</span></label>
-                                                                <select name="category_id" class="form-control select2">
-                                                                    <option>Select Category</option>
+                                                                <select name="category_id" class="form-control select2" required>
+                                                                    <option value="">Select Category</option>
                                                                     @foreach($category as $row1)
                                                                         <option
                                                                             value="{{$row1->id}}" {{ ( $row1->id == $row->category_id) ? 'selected' : '' }}>{{$row1->name}}</option>
@@ -158,8 +158,8 @@
                         <div class="col-md-12">
                             <div class="form-group">
                                 <label for="title"><b>Category</b><span class="text-danger">*</span></label>
-                                <select name="category_id" class="form-control select2">
-                                    <option>Select Category</option>
+                                <select name="category_id" class="form-control select2" required>
+                                    <option value="">Select Category</option>
                                     @foreach($category as $row)
                                         <option value="{{$row->id}}">{{$row->name}}</option>
                                     @endforeach
