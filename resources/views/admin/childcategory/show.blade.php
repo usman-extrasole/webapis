@@ -41,95 +41,95 @@
 
                             <div class="col-md-6">
                                 <div class="form-group">
-                                    <label for="">Title 1</label>
-                                    <input readonly type="text" value="{{$childcategory->name1}}" name="name1" placeholder="Enter Title 1" class="form-control">
+                                    <label for="">Title </label>
+                                    <input readonly type="text" value="{{$childcategory->name}}" name="name1" placeholder="Enter Title 1" class="form-control">
                                 </div>
                             </div>
                             <div class="col-md-6">
                                 <div class="form-group">
-                                    <label for="">File1</label>
-                                    @if(file_exists($childcategory->file1))
-                                    <a href="{{asset($childcategory->file1)}}" target="_blank"> <span class="badge badge-success">{{$childcategory->name1}}</span></a>
-                                    @elseif($childcategory->file1)
-                                        <a href="#" target="_blank"> <span class="badge badge-success">{{$childcategory->file1}}</span></a>
+                                    <label for="">File</label><br>
+                                    @if(file_exists($childcategory->file))
+                                    <a href="{{asset($childcategory->file)}}" target="_blank"> <span class="badge badge-success">{{$childcategory->name}}</span></a>
+                                    @elseif($childcategory->file)
+                                        <a href="#" target="_blank"> <span class="badge badge-success">{{$childcategory->file}}</span></a>
                                     @else
                                         <a href="#" target="_blank"> <span class="badge badge-success">Empty</span></a>
                                     @endif
                                 </div>
                             </div>
-                            <div class="col-md-6">
-                                <div class="form-group">
-                                    <label for="">Title 2</label>
-                                    <input type="text" readonly value="{{$childcategory->name2}}" name="name2" placeholder="Enter Title 2"  class="form-control">
-                                </div>
-                            </div>
-                            <div class="col-md-6">
-                                <div class="form-group">
-                                    <label for="">File 2</label>
-                                    @if(file_exists($childcategory->file2))
-                                        <a href="{{asset($childcategory->file2)}}" target="_blank"> <span class="badge badge-success">{{$childcategory->name2}}</span></a>
-                                    @elseif($childcategory->file2)
-                                        <a href="#" target="_blank"> <span class="badge badge-success">{{$childcategory->file2}}</span></a>
-                                    @else
-                                        <a href="#" target="_blank"> <span class="badge badge-success">Empty</span></a>
-                                    @endif
-                                </div>
-                            </div>
+{{--                            <div class="col-md-6">--}}
+{{--                                <div class="form-group">--}}
+{{--                                    <label for="">Title 2</label>--}}
+{{--                                    <input type="text" readonly value="{{$childcategory->name2}}" name="name2" placeholder="Enter Title 2"  class="form-control">--}}
+{{--                                </div>--}}
+{{--                            </div>--}}
+{{--                            <div class="col-md-6">--}}
+{{--                                <div class="form-group">--}}
+{{--                                    <label for="">File 2</label>--}}
+{{--                                    @if(file_exists($childcategory->file2))--}}
+{{--                                        <a href="{{asset($childcategory->file2)}}" target="_blank"> <span class="badge badge-success">{{$childcategory->name2}}</span></a>--}}
+{{--                                    @elseif($childcategory->file2)--}}
+{{--                                        <a href="#" target="_blank"> <span class="badge badge-success">{{$childcategory->file2}}</span></a>--}}
+{{--                                    @else--}}
+{{--                                        <a href="#" target="_blank"> <span class="badge badge-success">Empty</span></a>--}}
+{{--                                    @endif--}}
+{{--                                </div>--}}
+{{--                            </div>--}}
 
-                            <div class="col-md-6">
-                                <div class="form-group">
-                                    <label for="">Title 3</label>
-                                    <input type="text" readonly name="name3" value="{{$childcategory->name3}}" placeholder="Enter Title 3"  class="form-control">
-                                </div>
-                            </div>
-                            <div class="col-md-6">
-                                <div class="form-group">
-                                    <label for="">File 3</label>
-                                    @if(file_exists($childcategory->file3))
-                                        <a href="{{asset($childcategory->file3)}}" target="_blank"> <span class="badge badge-success">{{$childcategory->name3}}</span></a>
-                                    @elseif($childcategory->file3)
-                                        <a href="#" target="_blank"> <span class="badge badge-success">{{$childcategory->file3}}</span></a>
-                                    @else
-                                        <a href="#" target="_blank"> <span class="badge badge-success">Empty</span></a>
-                                    @endif
-                                </div>
-                            </div>
-                            <div class="col-md-6">
-                                <div class="form-group">
-                                    <label for="">Title 4</label>
-                                    <input type="text" readonly name="name4" value="{{$childcategory->name4}}" placeholder="Enter Title 4"  class="form-control">
-                                </div>
-                            </div>
-                            <div class="col-md-6">
-                                <div class="form-group">
-                                    <label for="">File 4</label>
-                                    @if(file_exists($childcategory->file4))
-                                        <a href="{{asset($childcategory->file4)}}" target="_blank"> <span class="badge badge-success">{{$childcategory->name4}}</span></a>
-                                    @elseif($childcategory->file4)
-                                        <a href="#" target="_blank"> <span class="badge badge-success">{{$childcategory->file4}}</span></a>
-                                    @else
-                                        <a href="#" target="_blank"> <span class="badge badge-success">Empty</span></a>
-                                    @endif
-                                </div>
-                            </div>
-                            <div class="col-md-6">
-                                <div class="form-group">
-                                    <label for="">Title 5</label>
-                                    <input type="text" readonly name="name5" value="{{$childcategory->name5}}" placeholder="Enter Title 5"  class="form-control">
-                                </div>
-                            </div>
-                            <div class="col-md-6">
-                                <div class="form-group">
-                                    <label for="">File 5</label>
-                                    @if(file_exists($childcategory->file5))
-                                        <a href="{{asset($childcategory->file5)}}" target="_blank"> <span class="badge badge-success">{{$childcategory->name5}}</span></a>
-                                    @elseif($childcategory->file5)
-                                        <a href="#" target="_blank"> <span class="badge badge-success">{{$childcategory->file5}}</span></a>
-                                    @else
-                                        <a href="#" target="_blank"> <span class="badge badge-success">Empty</span></a>
-                                    @endif
-                                </div>
-                            </div>
+{{--                            <div class="col-md-6">--}}
+{{--                                <div class="form-group">--}}
+{{--                                    <label for="">Title 3</label>--}}
+{{--                                    <input type="text" readonly name="name3" value="{{$childcategory->name3}}" placeholder="Enter Title 3"  class="form-control">--}}
+{{--                                </div>--}}
+{{--                            </div>--}}
+{{--                            <div class="col-md-6">--}}
+{{--                                <div class="form-group">--}}
+{{--                                    <label for="">File 3</label>--}}
+{{--                                    @if(file_exists($childcategory->file3))--}}
+{{--                                        <a href="{{asset($childcategory->file3)}}" target="_blank"> <span class="badge badge-success">{{$childcategory->name3}}</span></a>--}}
+{{--                                    @elseif($childcategory->file3)--}}
+{{--                                        <a href="#" target="_blank"> <span class="badge badge-success">{{$childcategory->file3}}</span></a>--}}
+{{--                                    @else--}}
+{{--                                        <a href="#" target="_blank"> <span class="badge badge-success">Empty</span></a>--}}
+{{--                                    @endif--}}
+{{--                                </div>--}}
+{{--                            </div>--}}
+{{--                            <div class="col-md-6">--}}
+{{--                                <div class="form-group">--}}
+{{--                                    <label for="">Title 4</label>--}}
+{{--                                    <input type="text" readonly name="name4" value="{{$childcategory->name4}}" placeholder="Enter Title 4"  class="form-control">--}}
+{{--                                </div>--}}
+{{--                            </div>--}}
+{{--                            <div class="col-md-6">--}}
+{{--                                <div class="form-group">--}}
+{{--                                    <label for="">File 4</label>--}}
+{{--                                    @if(file_exists($childcategory->file4))--}}
+{{--                                        <a href="{{asset($childcategory->file4)}}" target="_blank"> <span class="badge badge-success">{{$childcategory->name4}}</span></a>--}}
+{{--                                    @elseif($childcategory->file4)--}}
+{{--                                        <a href="#" target="_blank"> <span class="badge badge-success">{{$childcategory->file4}}</span></a>--}}
+{{--                                    @else--}}
+{{--                                        <a href="#" target="_blank"> <span class="badge badge-success">Empty</span></a>--}}
+{{--                                    @endif--}}
+{{--                                </div>--}}
+{{--                            </div>--}}
+{{--                            <div class="col-md-6">--}}
+{{--                                <div class="form-group">--}}
+{{--                                    <label for="">Title 5</label>--}}
+{{--                                    <input type="text" readonly name="name5" value="{{$childcategory->name5}}" placeholder="Enter Title 5"  class="form-control">--}}
+{{--                                </div>--}}
+{{--                            </div>--}}
+{{--                            <div class="col-md-6">--}}
+{{--                                <div class="form-group">--}}
+{{--                                    <label for="">File 5</label>--}}
+{{--                                    @if(file_exists($childcategory->file5))--}}
+{{--                                        <a href="{{asset($childcategory->file5)}}" target="_blank"> <span class="badge badge-success">{{$childcategory->name5}}</span></a>--}}
+{{--                                    @elseif($childcategory->file5)--}}
+{{--                                        <a href="#" target="_blank"> <span class="badge badge-success">{{$childcategory->file5}}</span></a>--}}
+{{--                                    @else--}}
+{{--                                        <a href="#" target="_blank"> <span class="badge badge-success">Empty</span></a>--}}
+{{--                                    @endif--}}
+{{--                                </div>--}}
+{{--                            </div>--}}
 
 
                         </div>

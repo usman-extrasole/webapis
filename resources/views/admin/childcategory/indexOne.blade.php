@@ -29,14 +29,20 @@
                                 </tr>
                                 </thead>
                                 <tbody>
-                                @foreach($childcategory as $row)
+                                @foreach($childcategory as $key=>$row)
                                     <tr>
-                                        <td>{{$row->id}}</td>
-                                        <td>{{$row->name1}}</td>
+                                        <td>{{$key+1}}</td>
+                                        <td>{{$row->name}}</td>
                                         <td>{{$row->category->name}}</td>
                                         <td>{{$row->subcategories->name}}</td>
                                         <td>
-                                            <a href="{{asset($row->file1)}}" target="_blank"> <span class="badge badge-success">Open Me</span></a>
+                                            @if(file_exists($row->file))
+                                                <a href="{{asset($row->file)}}" target="_blank"> <span class="badge badge-success">{{$row->name}}</span></a>
+                                            @elseif($row->file)
+                                                <a href="#" target="_blank"> <span class="badge badge-success">{{$row->file}}</span></a>
+                                            @else
+                                                <a href="#" target="_blank"> <span class="badge badge-success">Empty</span></a>
+                                            @endif
                                         </td>
                                         <td>{{$row->user->name}}</td>
                                         <td><a href="{{route('child-category.edit' , ['id'=>$row->id,'status'=>1])}}"  class="btn btn-sm btn-primary" title="edit">

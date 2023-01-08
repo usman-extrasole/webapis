@@ -15,16 +15,8 @@ class CreateChildCategoriesTable extends Migration
     {
         Schema::create('child_categories', function (Blueprint $table) {
             $table->id();
-            $table->string('name1')->nullable();
-            $table->string('file1')->nullable();
-            $table->string('name2')->nullable();
-            $table->string('file2')->nullable();
-            $table->string('name3')->nullable();
-            $table->string('file3')->nullable();
-            $table->string('name4')->nullable();
-            $table->string('file4')->nullable();
-            $table->string('name5')->nullable();
-            $table->string('file5')->nullable();
+            $table->string('name')->nullable();
+            $table->string('file')->nullable();
             $table->unsignedBigInteger('category_id');
             $table->foreign('category_id')->references('id')->on('categories')->onDelete('cascade');
             $table->unsignedBigInteger('subcategory_id');

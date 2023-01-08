@@ -82,31 +82,31 @@ class AppControlller extends Controller
     }
     public function librarySearch(Request $request)
     {
-        $search = ChildCategory::where('status','=',0)->where('name1', 'LIKE', '%' . $request->keyword . '%')
-            ->orWhere('name2', 'LIKE', '%' . $request->keyword . '%')
-            ->orWhere('name3', 'LIKE', '%' . $request->keyword . '%')
-            ->orWhere('name4', 'LIKE', '%' . $request->keyword . '%')
-            ->orWhere('name5', 'LIKE', '%' . $request->keyword . '%')
+        $search = ChildCategory::where('status','=',0)->where('name', 'LIKE', '%' . $request->keyword . '%')
+//            ->orWhere('name2', 'LIKE', '%' . $request->keyword . '%')
+//            ->orWhere('name3', 'LIKE', '%' . $request->keyword . '%')
+//            ->orWhere('name4', 'LIKE', '%' . $request->keyword . '%')
+//            ->orWhere('name5', 'LIKE', '%' . $request->keyword . '%')
             ->get();
         return response()->json(['success' => $search], $this->successStatus);
     }
     public function guitarSearch(Request $request)
     {
-        $search = ChildCategory::where('status','=',1)->where('name1', 'LIKE', '%' . $request->keyword . '%')
-            ->orWhere('name2', 'LIKE', '%' . $request->keyword . '%')
-            ->orWhere('name3', 'LIKE', '%' . $request->keyword . '%')
-            ->orWhere('name4', 'LIKE', '%' . $request->keyword . '%')
-            ->orWhere('name5', 'LIKE', '%' . $request->keyword . '%')
+        $search = ChildCategory::where('status','=',1)->where('name', 'LIKE', '%' . $request->keyword . '%')
+//            ->orWhere('name2', 'LIKE', '%' . $request->keyword . '%')
+//            ->orWhere('name3', 'LIKE', '%' . $request->keyword . '%')
+//            ->orWhere('name4', 'LIKE', '%' . $request->keyword . '%')
+//            ->orWhere('name5', 'LIKE', '%' . $request->keyword . '%')
             ->get();
         return response()->json(['success' => $search], $this->successStatus);
     }
     public function pianoSearch(Request $request)
     {
-        $search = ChildCategory::where('status','=',2)->where('name1', 'LIKE', '%' . $request->keyword . '%')
-            ->orWhere('name2', 'LIKE', '%' . $request->keyword . '%')
-            ->orWhere('name3', 'LIKE', '%' . $request->keyword . '%')
-            ->orWhere('name4', 'LIKE', '%' . $request->keyword . '%')
-            ->orWhere('name5', 'LIKE', '%' . $request->keyword . '%')
+        $search = ChildCategory::where('status','=',2)->where('name', 'LIKE', '%' . $request->keyword . '%')
+//            ->orWhere('name2', 'LIKE', '%' . $request->keyword . '%')
+//            ->orWhere('name3', 'LIKE', '%' . $request->keyword . '%')
+//            ->orWhere('name4', 'LIKE', '%' . $request->keyword . '%')
+//            ->orWhere('name5', 'LIKE', '%' . $request->keyword . '%')
             ->get();
         return response()->json(['success' => $search], $this->successStatus);
     }

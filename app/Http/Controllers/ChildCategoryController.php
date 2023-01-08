@@ -60,62 +60,127 @@ class ChildCategoryController extends Controller
      */
     public function store(Request $request)
     {
-       $childcategory = new ChildCategory();
-        $childcategory->name1 = $request->name1;
-        $childcategory->name2 = $request->name2;
-        $childcategory->name3 = $request->name3;
-        $childcategory->name4 = $request->name4;
-        $childcategory->name5 = $request->name5;
-        $childcategory->status = $request->status;
-        $childcategory->category_id = $request->category_id;
-        $childcategory->subcategory_id = $request->subcategory_id;
-        $childcategory->user_id = Auth::user()->id;
-        $childcategory->file1 = $request->file1;
-        $childcategory->file2 = $request->file2;
-        $childcategory->file3 = $request->file3;
-        $childcategory->file4 = $request->file4;
-        $childcategory->file5 = $request->file5;
         if ($request->hasfile('file1')) {
-
+            $childcategory = new ChildCategory();
+            $childcategory->category_id = $request->category_id;
+            $childcategory->subcategory_id = $request->subcategory_id;
+            $childcategory->name = $request->name1;
+            $childcategory->status = $request->status;
+            $childcategory->user_id = Auth::user()->id;
             $image1 = $request->file('file1');
             $name = time() . 'file1' . '.' . $image1->getClientOriginalExtension();
             $destinationPath = 'img/';
             $image1->move($destinationPath, $name);
-            $childcategory->file1 = 'img/' . $name;
+            $childcategory->file = 'img/'. $name;
+            $childcategory->save();
+        }
+        elseif($request->file1){
+            $childcategory = new ChildCategory();
+            $childcategory->category_id = $request->category_id;
+            $childcategory->subcategory_id = $request->subcategory_id;
+            $childcategory->name = $request->name1;
+            $childcategory->file = $request->file1;
+            $childcategory->status = $request->status;
+            $childcategory->user_id = Auth::user()->id;
+            $childcategory->save();
         }
         if ($request->hasfile('file2')) {
-
+            $childcategory = new ChildCategory();
+            $childcategory->category_id = $request->category_id;
+            $childcategory->subcategory_id = $request->subcategory_id;
+            $childcategory->name = $request->name2;
+            $childcategory->status = $request->status;
+            $childcategory->user_id = Auth::user()->id;
             $image1 = $request->file('file2');
             $name = time() . 'file2' . '.' . $image1->getClientOriginalExtension();
             $destinationPath = 'img/';
             $image1->move($destinationPath, $name);
-            $childcategory->file2 = 'img/' . $name;
+            $childcategory->file = 'img/'. $name;
+            $childcategory->save();
+        }
+        elseif($request->file2){
+            $childcategory = new ChildCategory();
+            $childcategory->category_id = $request->category_id;
+            $childcategory->subcategory_id = $request->subcategory_id;
+            $childcategory->name = $request->name2;
+            $childcategory->file = $request->file2;
+            $childcategory->status = $request->status;
+            $childcategory->user_id = Auth::user()->id;
+            $childcategory->save();
         }
         if ($request->hasfile('file3')) {
-
+            $childcategory = new ChildCategory();
+            $childcategory->category_id = $request->category_id;
+            $childcategory->subcategory_id = $request->subcategory_id;
+            $childcategory->name = $request->name3;
+            $childcategory->status = $request->status;
+            $childcategory->user_id = Auth::user()->id;
             $image1 = $request->file('file3');
             $name = time() . 'file3' . '.' . $image1->getClientOriginalExtension();
             $destinationPath = 'img/';
             $image1->move($destinationPath, $name);
-            $childcategory->file3 = 'img/' . $name;
+            $childcategory->file = 'img/'. $name;
+            $childcategory->save();
+        }
+        elseif($request->file3){
+            $childcategory = new ChildCategory();
+            $childcategory->category_id = $request->category_id;
+            $childcategory->subcategory_id = $request->subcategory_id;
+            $childcategory->name = $request->name3;
+            $childcategory->file = $request->file3;
+            $childcategory->status = $request->status;
+            $childcategory->user_id = Auth::user()->id;
+            $childcategory->save();
         }
         if ($request->hasfile('file4')) {
-
+            $childcategory = new ChildCategory();
+            $childcategory->category_id = $request->category_id;
+            $childcategory->subcategory_id = $request->subcategory_id;
+            $childcategory->name = $request->name4;
+            $childcategory->status = $request->status;
+            $childcategory->user_id = Auth::user()->id;
             $image1 = $request->file('file4');
             $name = time() . 'file4' . '.' . $image1->getClientOriginalExtension();
             $destinationPath = 'img/';
             $image1->move($destinationPath, $name);
-            $childcategory->file4 = 'img/' . $name;
+            $childcategory->file = 'img/'. $name;
+            $childcategory->save();
+        }
+        elseif($request->file4){
+            $childcategory = new ChildCategory();
+            $childcategory->category_id = $request->category_id;
+            $childcategory->subcategory_id = $request->subcategory_id;
+            $childcategory->name = $request->name4;
+            $childcategory->file = $request->file4;
+            $childcategory->status = $request->status;
+            $childcategory->user_id = Auth::user()->id;
+            $childcategory->save();
         }
         if ($request->hasfile('file5')) {
-
+            $childcategory = new ChildCategory();
+            $childcategory->category_id = $request->category_id;
+            $childcategory->subcategory_id = $request->subcategory_id;
+            $childcategory->name = $request->name5;
+            $childcategory->status = $request->status;
+            $childcategory->user_id = Auth::user()->id;
             $image1 = $request->file('file5');
             $name = time() . 'file5' . '.' . $image1->getClientOriginalExtension();
             $destinationPath = 'img/';
             $image1->move($destinationPath, $name);
-            $childcategory->file5 = 'img/' . $name;
+            $childcategory->file = 'img/'. $name;
+            $childcategory->save();
         }
-        $childcategory->save();
+        elseif($request->file5){
+            $childcategory = new ChildCategory();
+            $childcategory->category_id = $request->category_id;
+            $childcategory->subcategory_id = $request->subcategory_id;
+            $childcategory->name = $request->name5;
+            $childcategory->file = $request->file5;
+            $childcategory->status = $request->status;
+            $childcategory->user_id = Auth::user()->id;
+            $childcategory->save();
+        }
+
         return redirect()->back()->with('message', 'Child-Category Added Successfully !');
     }
 
@@ -158,68 +223,19 @@ class ChildCategoryController extends Controller
     {
 
         $childcategory = ChildCategory::find($id);
-        $childcategory->name1 = $request->name1;
-        $childcategory->name2 = $request->name2;
-        $childcategory->name3 = $request->name3;
-        $childcategory->name4 = $request->name4;
-        $childcategory->name5 = $request->name5;
         $childcategory->category_id = $request->category_id;
         $childcategory->subcategory_id = $request->subcategory_id;
-        $childcategory->user_id = Auth::user()->id;
-        if($request->file1){
-            $childcategory->file1 = $request->file1;
+        $childcategory->name = $request->name;
+        if($request->file){
+            $childcategory->file = $request->file;
         }
-        if($request->file2){
-            $childcategory->file2 = $request->file2;
-        }
-        if($request->file3){
-            $childcategory->file3 = $request->file3;
-        }
-        if($request->file4){
-            $childcategory->file4 = $request->file4;
-        }
-        if($request->file5){
-            $childcategory->file5 = $request->file5;
-        }
-        if ($request->hasfile('file1')) {
-
-            $image1 = $request->file('file1');
-            $name = time() . 'file1' . '.' . $image1->getClientOriginalExtension();
+        if ($request->hasfile('file')) {
+            $image1 = $request->file('file');
+            $name = time() . 'file' . '.' . $image1->getClientOriginalExtension();
             $destinationPath = 'img/';
             $image1->move($destinationPath, $name);
-            $childcategory->file1 = 'img/' . $name;
-        }
-        if ($request->hasfile('file2')) {
+            $childcategory->file = 'img/'. $name;
 
-            $image1 = $request->file('file2');
-            $name = time() . 'file2' . '.' . $image1->getClientOriginalExtension();
-            $destinationPath = 'img/';
-            $image1->move($destinationPath, $name);
-            $childcategory->file2 = 'img/' . $name;
-        }
-        if ($request->hasfile('file3')) {
-
-            $image1 = $request->file('file3');
-            $name = time() . 'file3' . '.' . $image1->getClientOriginalExtension();
-            $destinationPath = 'img/';
-            $image1->move($destinationPath, $name);
-            $childcategory->file3 = 'img/' . $name;
-        }
-        if ($request->hasfile('file4')) {
-
-            $image1 = $request->file('file4');
-            $name = time() . 'file4' . '.' . $image1->getClientOriginalExtension();
-            $destinationPath = 'img/';
-            $image1->move($destinationPath, $name);
-            $childcategory->file4 = 'img/' . $name;
-        }
-        if ($request->hasfile('file5')) {
-
-            $image1 = $request->file('file5');
-            $name = time() . 'file5' . '.' . $image1->getClientOriginalExtension();
-            $destinationPath = 'img/';
-            $image1->move($destinationPath, $name);
-            $childcategory->file5 = 'img/' . $name;
         }
         $childcategory->save();
         return redirect()->back()->with('message', 'Child-Category Update Successfully !');
