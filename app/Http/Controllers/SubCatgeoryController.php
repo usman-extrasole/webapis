@@ -67,10 +67,13 @@ class SubCatgeoryController extends Controller
 
     public function edit($id)
     {
+//        $subcategory = SubCatgeory::find($id);
+//        $subcategory->status = 0;
+//        $subcategory->save();
+//        return redirect()->back()->with('info', 'Record Status Updated Successfully !');
         $subcategory = SubCatgeory::find($id);
-        $subcategory->status = 0;
-        $subcategory->save();
-        return redirect()->back()->with('info', 'Record Status Updated Successfully !');
+        $subcategory->delete();
+        return redirect()->back()->with('error', 'Record Deleted Successfully !');
 
     }
 
@@ -97,7 +100,7 @@ class SubCatgeoryController extends Controller
      * @param SubCatgeory $subCatgeory
      * @return Response
      */
-    public
+
     function destroy($id)
     {
         $subcategory = SubCatgeory::find($id);
