@@ -4,9 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="087958c5-a83a-4d00-ac9d-cbdcc92eddf7" name="Changes" comment="All done">
+    <list default="true" id="087958c5-a83a-4d00-ac9d-cbdcc92eddf7" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/SubCatgeoryController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/SubCatgeoryController.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -128,20 +127,20 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/xampp/htdocs/Ecommerce&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "last_opened_file_path": "C:/xampp/htdocs/webapis",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RunManager">
     <configuration name="phpunit.xml" type="PHPUnitRunConfigurationType" factoryName="PHPUnit">
       <TestRunner scope="XML" />
@@ -158,8 +157,16 @@
       <updated>1670530760307</updated>
       <workItem from="1670530761683" duration="44137000" />
       <workItem from="1670958360549" duration="5407000" />
-      <workItem from="1673117427989" duration="7695000" />
-      <workItem from="1673208793702" duration="2854000" />
+      <workItem from="1671103583829" duration="1288000" />
+      <workItem from="1671174554110" duration="110000" />
+      <workItem from="1671433588807" duration="169000" />
+      <workItem from="1671440925624" duration="25000" />
+      <workItem from="1671441157968" duration="2529000" />
+      <workItem from="1671520622443" duration="594000" />
+      <workItem from="1671529878950" duration="2888000" />
+      <workItem from="1672043629951" duration="608000" />
+      <workItem from="1672738116649" duration="7192000" />
+      <workItem from="1672910838831" duration="3526000" />
     </task>
     <task id="LOCAL-00001" summary="All done">
       <created>1670876307369</created>
@@ -169,18 +176,18 @@
       <updated>1670876307369</updated>
     </task>
     <task id="LOCAL-00002" summary="All done">
-      <created>1673156815800</created>
+      <created>1672912449819</created>
       <option name="number" value="00002" />
       <option name="presentableId" value="LOCAL-00002" />
       <option name="project" value="LOCAL" />
-      <updated>1673156815800</updated>
+      <updated>1672912449819</updated>
     </task>
     <task id="LOCAL-00003" summary="All done">
-      <created>1673211233855</created>
+      <created>1672912648434</created>
       <option name="number" value="00003" />
       <option name="presentableId" value="LOCAL-00003" />
       <option name="project" value="LOCAL" />
-      <updated>1673211233855</updated>
+      <updated>1672912648434</updated>
     </task>
     <option name="localTasksCounter" value="4" />
     <servers />
@@ -208,7 +215,7 @@
       <breakpoints>
         <line-breakpoint enabled="true" type="php">
           <url>file://$PROJECT_DIR$/routes/web.php</url>
-          <line>37</line>
+          <line>36</line>
           <option name="timeStamp" value="1" />
         </line-breakpoint>
       </breakpoints>

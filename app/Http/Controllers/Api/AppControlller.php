@@ -88,7 +88,14 @@ class AppControlller extends Controller
 //            ->orWhere('name4', 'LIKE', '%' . $request->keyword . '%')
 //            ->orWhere('name5', 'LIKE', '%' . $request->keyword . '%')
             ->get();
-        return response()->json(['success' => $search], $this->successStatus);
+
+        if(!$search->isEmpty()){
+            return response()->json(['success' => $search], $this->successStatus);
+        }
+        else{
+            return response()->json(['success' => 'Keyword Not Found'], $this->successStatus);
+        }
+
     }
     public function guitarSearch(Request $request)
     {
@@ -98,7 +105,12 @@ class AppControlller extends Controller
 //            ->orWhere('name4', 'LIKE', '%' . $request->keyword . '%')
 //            ->orWhere('name5', 'LIKE', '%' . $request->keyword . '%')
             ->get();
-        return response()->json(['success' => $search], $this->successStatus);
+        if(!$search->isEmpty()){
+            return response()->json(['success' => $search], $this->successStatus);
+        }
+        else{
+            return response()->json(['success' => 'Keyword Not Found'], $this->successStatus);
+        }
     }
     public function pianoSearch(Request $request)
     {
@@ -108,6 +120,11 @@ class AppControlller extends Controller
 //            ->orWhere('name4', 'LIKE', '%' . $request->keyword . '%')
 //            ->orWhere('name5', 'LIKE', '%' . $request->keyword . '%')
             ->get();
-        return response()->json(['success' => $search], $this->successStatus);
+        if(!$search->isEmpty()){
+            return response()->json(['success' => $search], $this->successStatus);
+        }
+        else{
+            return response()->json(['success' => 'Keyword Not Found'], $this->successStatus);
+        }
     }
 }
