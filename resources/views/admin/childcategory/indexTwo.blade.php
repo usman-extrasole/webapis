@@ -39,7 +39,7 @@
                                             @if(file_exists($row->file))
                                                 <a href="{{asset($row->file)}}" target="_blank"> <span class="badge badge-success">{{$row->name}}</span></a>
                                             @elseif($row->file)
-                                                <a href="#" target="_blank"> <span class="badge badge-success">{{$row->file}}</span></a>
+                                                <a href="{{$row->file}}" target="_blank"> <span class="badge badge-success">{{$row->file}}</span></a>
                                             @else
                                                 <a href="#" target="_blank"> <span class="badge badge-success">Empty</span></a>
                                             @endif
